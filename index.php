@@ -1,82 +1,58 @@
-  <?php get_header(); ?>
+<?php get_header(); ?>
+<section class="fv">
+  <div class="fv-main">
+    <p class="fv-main-desc">Commit to the growth<br>for everyone</p>
+  </div>
+</section>
 
-  <section class="fv">
-    <div class="fv-main">
-      <p class="fv-main-desc">Commit to the growth<br>for everyone</p>
+<main class="main">
+  <div class="main-inner">
+    <h2 class="main-inner-title">新着記事</h2>
+    <div class="main-inner-flex">
+      <section class="post">
+        <div class="post-flex">
+          <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+              <a href="<?php the_permalink()?>" class="post-flex-container">
+                <div class="post-flex-container-img">
+                  <!-- <p class="post-flex-container-img-tag">キャリア</p> -->
+                  <?php if (!is_category() && has_category()) : ?>
+                    <p class="post-flex-container-img-tag">
+                      <?php $postcat = get_the_category();
+                      echo $postcat[0]->name;
+                      ?>
+                    </p>
+                  <?php endif; ?>
+                  <!-- <img src="./img/blog__first.jpg" class="post-flex-container-img-image"  alt=""> -->
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail(); ?>
+                    <?php else : ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
+                  <?php endif ?>
+                </div>
+                <div class="post-flex-container-desc">
+                  <h3 class="post-flex-container-desc-title">
+                    <?php echo get_the_title(); ?>
+                    <?php
+                    if (mb_strlen($post->post_title) > 30) {
+                      $title = mb_substr($post->post_title, 0, 30);
+                      echo $title . "...";
+                    } else {
+                      echo $post->post_title;
+                    }
+                    ?>
+                  </h3>
+                  <p><?php echo get_the_date('Y-m-d'); ?></p>
+                </div>
+              </a>
+            <?php endwhile; ?>
+          <?php else : ?>
+            <p>投稿が見つかりません～</p>
+          <?php endif; ?>
+        </div>
+      </section>
+      <?php get_sidebar($name); ?>
     </div>
-  </section>
-
-  <main class="main">
-    <div class="main-inner">
-      <h2 class="main-inner-title">新着記事</h2>
-      <div class="main-inner-flex">
-        <section class="post">
-          <div class="post-flex">
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">キャリア</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">プログラミングでフリーランスになるには??</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">MySQL</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">データベースのMySQLの解説。意外と簡単</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">PHP</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">PHPとは何かを世界一わかりやすく解説。</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">JavaScript</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">プログラミングとは何かを世界一わかりやすく解説</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">CSS</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">プログラミングCSSの勉強方法特集。HTMLも</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-            <a href="single.html" class="post-flex-container">
-              <div class="post-flex-container-img">
-                <p class="post-flex-container-img-tag">HTML</p>
-                <img class="post-flex-container-img-image" src="img/blog__first.jpg" alt="">
-              </div>
-              <div class="post-flex-container-desc">
-                <h3 class="post-flex-container-desc-title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
-                <p>2021-02-26</p>
-              </div>
-            </a>
-          </div>
-        </section>
-        <?php get_sidebar(); ?>
-      </div>
-    </div>
-  </main>
-
-  <?php get_footer(); ?>
+  </div>
+</main>
+<?php get_footer(); ?>
