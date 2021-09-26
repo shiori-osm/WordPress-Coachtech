@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <div class="sidebar-top">
-    <img class="sidebar-top-img" src="./img/banner.png" alt="">
+    <img class="sidebar-top-img" src="<?php echo get_template_directory_uri(); ?>./img/banner.png" alt="">
   </div>
   <div class="sidebar-profile">
     <div class="sidebar-profile-img">

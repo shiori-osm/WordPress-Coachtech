@@ -2,7 +2,7 @@
 
 <main class="inner">
   <?php if (have_posts()) : the_post(); ?>
-    <?php while (have_posts()) : the_post(); ?>
+
       <div class="article">
         <!-- <div class="article-category">MySQL</div> -->
         <?php if (has_category()) : ?>
@@ -42,15 +42,12 @@
           <p>サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。</p>
 
           <h4 class="article-text-h4">サンプル見出しがここには入ります。</h4>
-          <p>サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。</p>
-        </div> -->
+          <p>サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。サンプルテキストがここにはたくさん入ります。</p> -->
           <?php the_content(); ?>
         </div>
-</main>
-
-
-<?php endwhile; ?>
-<?php endelse: ?>
-<p>投稿が見つかりません</p>
-<?php endif; ?>
-<?php get_footer(); ?>
+      </div>
+      <?php endelse: ?>
+      <p>投稿が見つかりません</p>
+      <?php endif; ?>
+      <?php get_footer(); ?>
+    </main>
