@@ -27,11 +27,11 @@
     </h1>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li class="header-nav-list-item"><a href="html.html">HTML</a></li>
-        <li class="header-nav-list-item"><a href="css.html">CSS</a></li>
-        <li class="header-nav-list-item"><a href="javascript.html">JavaScript</a></li>
-        <li class="header-nav-list-item"><a href="php.html">PHP</a></li>
-        <li class="header-nav-list-item"><a href="mysql.html">MySQL</a></li>
+        <li class="header-nav-list-item"><a href="/category.php?p=158">HTML</a></li>
+        <li class="header-nav-list-item"><a href="">CSS</a></li>
+        <li class="header-nav-list-item"><a href="">JavaScript</a></li>
+        <li class="header-nav-list-item"><a href="">PHP</a></li>
+        <li class="header-nav-list-item"><a href="">MySQL</a></li>
       </ul>
     </nav>
   </header>
