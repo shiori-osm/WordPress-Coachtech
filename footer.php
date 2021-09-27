@@ -1,5 +1,5 @@
 <footer class="footer">
-  <small>Copyright &copy; 2021 coachtechサンプルテスト All Right Reserved.</small>
+  <small>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> All Right Reserved.</small>
 </footer>
 
 

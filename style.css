@@ -49,7 +49,7 @@ li {
 }
 
 .fv {
-  background-image: url(./img/media__firstview.png) no-repeat;
+  background-image: url("<?php echo get_template_directory_uri() ;?>/img/media__firstview.png") no-repeat;
   vertical-align: bottom;
   background-size: cover;
 }

@@ -4,7 +4,7 @@
   </div>
   <div class="sidebar-profile">
     <div class="sidebar-profile-img">
-      <img class="sidebar-profile-img-image" src="./img/estramedia__logo.png" alt="">
+      <img class="sidebar-profile-img-image" src="<?php echo get_template_directory_uri(); ?>/img/estramedia__logo.png" alt="">
     </div>
     <div class="sidebar-profile-desc">
       <h3 class="sidebar-title">エストラ編集部</h3>
