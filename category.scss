@@ -11,37 +11,14 @@ li{
   list-style-type: none;
 }
 
-.header{
-  background-color: #fff;
-  padding: 30px;
-  &-title{
-    text-align: center;
-    margin-bottom: 30px;
-    &-link{
-      display: block;
-    }
-  }
-  &-nav{
-    &-list{
-      display: flex;
-      justify-content: center;
-      &-item:not(:last-child){
-        margin-right: 40px;
-      }
-    }
-  }
-}
-
-
 .cat-fv{
   background-color: #B31566;
-  margin-bottom: 100px;
-  padding: 80px;
   &-main{
     font-family: "Indie Flower" , "Meiryo";
     &-desc{
+      padding: 100px;
+      line-height: 1.5em;
       text-align: center;
-      align-items: center;
       font-weight: bold;
       font-size: 4em;
       color: #fff;
@@ -52,111 +29,68 @@ li{
   &-inner{
     width: 90%;
     margin: auto;
+    &-title{
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #707070;
+    }
+    &-title::before{
+      color: #B31566;
+      font-family: "Indie Flower";
+      content:"\ANew Post\A";
+      white-space: pre;
+      font-size: .5em;
+      font-weight: lighter;
+    }
     &-flex{
       display: flex;
     }
   }
 }
-
-
-
-.post-link{
-  margin: 30px;
-  height: 50%;
-  display: inline;
-  background-color: #fff;
-  border-radius: 20px;
-  width: 60%;
-  margin-right: calc(100%-30%);
-  &-img{
-    width: 70%;
-    &-image{
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-    }
-  }
-  &-desc{
-    padding: 30px;
-  }
-}
-
-
-.sidebar{
-  margin-top: 30px;
-  width: 30%;
-  &-title{
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-  &-top{
-    &-img{
-      width: 100%;
-      border-radius: 30px;
-      margin-bottom: 30px;
-    }
-  }
-  &-profile{
-    text-align: center;
-    background-color: #fff;
-    padding: 8%;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    &-img{
-      object-fit: cover;
-      margin: 0 auto 30px;
-      background-color: #B31566;
-      border-radius: 50%;
-      text-align: center;
-      align-items: center;
-      width: 150px;
-      line-height: 150px;
-      &-image{
-        width: 80%;
-      }
-    }
-    &-desc{
-      &-p{
-        line-height: 2em;
-
-      }
-    }
-  }
-  &-category{
-    margin-bottom: 50px;
-    background-color: #fff;
-    line-height: 2em;
-    padding: 8%;
-    border-radius: 30px;
-    &-link{
-      padding: 10px 0;
+.post{
+  width: 70%;
+  &-flex{
+    display: flex;
+    flex-wrap: wrap;
+    &-container{
+      margin-top: 30px;
+      margin-right: 5%;
       display: block;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #eee;
+      width: 28%;
+      position: relative;
+      &-img{
+        vertical-align:bottom;
+        border-radius: 20px 20px 0 0;
+        &-tag{
+          border-radius: 20px 0 0 0;
+          position: absolute;
+          padding: 5% 10%;
+          background-color: #B31566;
+          color: #fff;
+          top: 0;
+        }
+        &-img{
+          object-fit: cover;
+        }
+      }
+      &-desc{
+        line-height: 1.5em;
+        border-radius: 0 0 20px 20px ;
+        background-color: #fff;
+        padding: 10%;
+        &-title{
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
 
-.footer{
-  font-size: .8em;
-  text-align: center;
-  padding: 30px;
-  background-color: #fff;
+.no-see{
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 760px) {
-  .header{
-    &-title{
-      margin-bottom: 0;
-    }
-    &-nav{
-      display: none;
-    }
-  }
-  .fv{
-    padding: 80px;
-  }
-
   .main{
     &-inner{
       &-flex{
@@ -164,12 +98,21 @@ li{
       }
     }
   }
-  .post-link{
+  .post{
     width: 100%;
-    margin: 0;
-    margin-top:30px;
+    &-flex{
+      flex-direction: column;
+      &-container{
+        width: 100%;
+        &-img{
+          object-fit: cover;
+        }
+        &-desc{
+          padding: 30px ;
+        }
+      }
+    }
   }
-
   .sidebar{
     width: 100%;
   }

@@ -28,10 +28,10 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-list-item"><a href="<?php echo get_category_link(158); ?>">HTML</a></li>
-        <li class="header-nav-list-item"><a href="">CSS</a></li>
-        <li class="header-nav-list-item"><a href="">JavaScript</a></li>
-        <li class="header-nav-list-item"><a href="">PHP</a></li>
-        <li class="header-nav-list-item"><a href="">MySQL</a></li>
+        <li class="header-nav-list-item"><a href="<?php echo get_category_link(159); ?>">CSS</a></li>
+        <li class="header-nav-list-item"><a href="<?php echo get_category_link(160); ?>">JavaScript</a></li>
+        <li class="header-nav-list-item"><a href="<?php echo get_category_link(162); ?>">PHP</a></li>
+        <li class="header-nav-list-item"><a href="<?php echo get_category_link(161); ?>">MySQL</a></li>
       </ul>
     </nav>
   </header>

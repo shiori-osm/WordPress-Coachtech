@@ -12,28 +12,6 @@ li{
 }
 
 
-
-.header{
-  background-color: #fff;
-  padding: 30px;
-  &-title{
-    text-align: center;
-    margin-bottom: 30px;
-    &-link{
-      display: block;
-    }
-  }
-  &-nav{
-    &-list{
-      display: flex;
-      justify-content: center;
-      &-item:not(:last-child){
-        margin-right: 40px;
-      }
-    }
-  }
-}
-
 .inner{
   width: 70%;
   margin: auto;
@@ -87,10 +65,6 @@ li{
   }
 }
 
-
-.footer{
-  font-size: .8em;
-  text-align: center;
-  padding: 30px;
-  background-color: #fff;
+.no-see{
+  margin: 30px;
 }
