@@ -96,21 +96,18 @@ li {
   position: relative;
 }
 
-.post-flex-container-img {
-  vertical-align: bottom;
-  border-radius: 20px 20px 0 0;
-}
-
 .post-flex-container-img-tag {
   border-radius: 20px 0 0 0;
   position: absolute;
   padding: 5% 10%;
   background-color: #B31566;
   color: #fff;
-  top: 0;
 }
 
-.post-flex-container-img-img {
+.post-flex-container-img-image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  vertical-align: bottom;
   object-fit: cover;
 }
 

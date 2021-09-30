@@ -87,8 +87,6 @@ li{
       width: 28%;
       position: relative;
       &-img{
-        vertical-align:bottom;
-        border-radius: 20px 20px 0 0;
         &-tag{
           border-radius: 20px 0 0 0;
           position: absolute;
@@ -97,7 +95,10 @@ li{
           color: #fff;
           top: 0;
         }
-        &-img{
+        &-image{
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+          vertical-align:bottom;
           object-fit: cover;
         }
       }
