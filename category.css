@@ -89,6 +89,12 @@ li {
   object-fit: cover;
 }
 
+.post-flex-container-img-noimage {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
 .post-flex-container-desc {
   line-height: 1.5em;
   border-radius: 0 0 20px 20px;

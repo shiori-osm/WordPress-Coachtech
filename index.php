@@ -25,8 +25,8 @@
                 <div class="post-flex-container-img">
                   <?php if (has_post_thumbnail()) : ?>
                     <img class="post-flex-container-img-image">
-                      <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?> 
-                      <!-- <img class="post-flex-container-img-image" alt="アイキャッチ画像がありません"> -->
+                    <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?>
+                    <!-- <img class="post-flex-container-img-image" alt="アイキャッチ画像がありません"> -->
                     <!-- <img src="./img/blog__first.jpg" class="post-flex-container-img-image"  alt=""> -->
                   <?php else : ?>
                     <img class="post-flex-container-img-image" src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
@@ -36,9 +36,9 @@
                   <h3 class="post-flex-container-desc-title">
                     <?php echo get_the_title(); ?>
                     <?php
-                    if (mb_strlen($post->post_title) > 30) {
-                      $title = mb_substr($post->post_title, 0, 30);
-                      echo $title . "...";
+                    if (mb_strlen($post->post_title, 'UTF-8') > 30) {
+                      $title = mb_substr($post->post_title, 0, 30, 'UTF-8');
+                      echo $title . '…';
                     } else {
                       echo $post->post_title;
                     }
