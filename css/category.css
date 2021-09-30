@@ -38,6 +38,7 @@ li {
 
 .fv {
   background-color: #B31566;
+  margin-bottom: 100px;
   padding: 80px;
 }
 .fv-main {
@@ -71,6 +72,9 @@ li {
   border-radius: 20px;
   width: 60%;
   margin-right: calc(100%-30%);
+}
+.post-link-img {
+  width: 70%;
 }
 .post-link-img-image {
   width: 100%;

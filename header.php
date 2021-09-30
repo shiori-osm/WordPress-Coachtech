@@ -27,7 +27,7 @@
     </h1>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li class="header-nav-list-item"><a href="/category.php?p=158">HTML</a></li>
+        <li class="header-nav-list-item"><a href="<?php echo get_category_link(158); ?>">HTML</a></li>
         <li class="header-nav-list-item"><a href="">CSS</a></li>
         <li class="header-nav-list-item"><a href="">JavaScript</a></li>
         <li class="header-nav-list-item"><a href="">PHP</a></li>

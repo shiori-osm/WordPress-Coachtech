@@ -17,7 +17,7 @@
 
       <div class="article-img">
         <?php if (has_post_thumbnail()) : ?>
-          <?php the_post_thumbnail(); ?>
+          <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'alt' => the_title_attribute('echo=0'))); ?>
         <?php else : ?>
           <img src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
         <?php endif; ?>
