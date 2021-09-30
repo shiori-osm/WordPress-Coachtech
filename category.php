@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<section class="fv">
-  <div class="fv-main">
-    <p class="fv-main-desc"><?php single_cat_title(); ?></p>
+<section class="cat-fv">
+  <div class="cat-fv-main">
+    <p class="cat-fv-main-desc"><?php single_cat_title(); ?></p>
   </div>
 </section>
 
@@ -17,9 +17,10 @@
             <div class="post-link-img">
               <!-- <img class="post-link-img-image" src="img/blog__first.jpg" alt=""> -->
               <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('post-thumbnails', array('width' => '100%',)); ?>
-              <?php else : ?>
-                <img src="<?php echo get_template_directory_uri() ?>/img/no-images.png" alt="">
+                <img class="post-link-img-image">
+                <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?>
+                <?php else : ?>
+                  <img src="<?php echo get_template_directory_uri() ?>/img/no-images.png" alt="">
               <?php endif; ?>
 
               <?php if (!is_category() && has_category()) : ?>

@@ -1,5 +1,5 @@
 body {
-  font-family: "Meiryo", sans-serif;
+  font-family: "Meiryo" ,sans-serif;
   color: #707070;
   background-color: #F5F5F5;
 }
@@ -17,21 +17,21 @@ li {
   background-color: #fff;
   padding: 30px;
 }
+
 .header-title {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .header-title-link {
   display: block;
 }
+
 .header-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
+
 .header-nav-list-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -41,9 +41,11 @@ li {
   vertical-align: bottom;
   background-size: cover;
 }
+
 .fv-main {
-  font-family: "Indie Flower", "Meiryo";
+  font-family: "Indie Flower" , "Meiryo";
 }
+
 .fv-main-desc {
   padding: 120px;
   line-height: 1.5em;
@@ -57,35 +59,35 @@ li {
   width: 90%;
   margin: auto;
 }
+
 .main-inner-title {
   font-weight: bold;
   font-size: 1.5em;
   color: #707070;
 }
+
 .main-inner-title::before {
   color: #B31566;
   font-family: "Indie Flower";
-  content: "\aNew Post\a";
+  content: "\ANew Post\A";
   white-space: pre;
-  font-size: 0.5em;
+  font-size: .5em;
   font-weight: lighter;
 }
+
 .main-inner-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .post {
   width: 70%;
 }
+
 .post-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
 .post-flex-container {
   margin-top: 30px;
   margin-right: 5%;
@@ -93,10 +95,12 @@ li {
   width: 28%;
   position: relative;
 }
+
 .post-flex-container-img {
   vertical-align: bottom;
   border-radius: 20px 20px 0 0;
 }
+
 .post-flex-container-img-tag {
   border-radius: 20px 0 0 0;
   position: absolute;
@@ -105,12 +109,18 @@ li {
   color: #fff;
   top: 0;
 }
+
+.post-flex-container-img-img {
+  object-fit: cover;
+}
+
 .post-flex-container-desc {
   line-height: 1.5em;
   border-radius: 0 0 20px 20px;
   background-color: #fff;
   padding: 10%;
 }
+
 .post-flex-container-desc-title {
   margin-bottom: 10px;
 }
@@ -119,15 +129,18 @@ li {
   margin-top: 30px;
   width: 30%;
 }
+
 .sidebar-title {
   font-size: 1.5em;
   margin-bottom: 30px;
 }
+
 .sidebar-top-img {
   width: 100%;
   border-radius: 30px;
   margin-bottom: 30px;
 }
+
 .sidebar-profile {
   text-align: center;
   background-color: #fff;
@@ -135,23 +148,25 @@ li {
   border-radius: 30px;
   margin-bottom: 30px;
 }
+
 .sidebar-profile-img {
   margin: 0 auto 30px;
   background-color: #B31566;
   border-radius: 50%;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 150px;
   line-height: 150px;
 }
+
 .sidebar-profile-img-image {
   width: 80%;
 }
+
 .sidebar-profile-desc-p {
   line-height: 2em;
 }
+
 .sidebar-category {
   margin-bottom: 50px;
   background-color: #fff;
@@ -159,20 +174,17 @@ li {
   padding: 8%;
   border-radius: 30px;
 }
+
 .sidebar-category-link {
   padding: 10px 0;
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px solid #eee;
 }
 
 .footer {
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
   padding: 30px;
   background-color: #fff;
@@ -185,7 +197,6 @@ li {
   .header-nav {
     display: none;
   }
-
   .fv {
     height: 70vh;
     background-image: url(./img/media__firstview-sp.png);
@@ -193,31 +204,21 @@ li {
   }
   .fv-main {
     margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .fv-main-desc {
     padding: 150px;
     line-height: 2em;
     font-size: 1.2em;
   }
-
   .main-inner-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-
   .post {
     width: 100%;
   }
   .post-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .post-flex-container {
     width: 100%;
@@ -228,9 +229,7 @@ li {
   .post-flex-container-desc {
     padding: 30px;
   }
-
   .sidebar {
     width: 100%;
   }
 }
-/*# sourceMappingURL=style.css.map */

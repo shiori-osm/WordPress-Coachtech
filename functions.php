@@ -8,7 +8,7 @@ function twpp_enqueue_styles(){
     wp_enqueue_style('single', get_template_directory_uri() . '/single.css');
   }
   if (is_category()) {
-    wp_enqueue_style('single', get_template_directory_uri() . '/category.css');
+    wp_enqueue_style('category', get_template_directory_uri() . '/category.css');
   }
 }
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');

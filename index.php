@@ -21,30 +21,31 @@
                     echo $postcat[0]->name;
                     ?>
                   </p>
-                  <?php endif; ?>
-                  <div class="post-flex-container-img">
+                <?php endif; ?>
+                <div class="post-flex-container-img">
                   <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'alt' => the_title_attribute('echo=0'))); ?>
-                    <!-- <img class="post-flex-container-img-image" alt="アイキャッチ画像がありません"> -->
+                    <img class="post-flex-container-img-image">
+                      <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?> 
+                      <!-- <img class="post-flex-container-img-image" alt="アイキャッチ画像がありません"> -->
                     <!-- <img src="./img/blog__first.jpg" class="post-flex-container-img-image"  alt=""> -->
                   <?php else : ?>
                     <img class="post-flex-container-img-image" src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
                   <?php endif ?>
-                  </div>
-                  <div class="post-flex-container-desc">
-                    <h3 class="post-flex-container-desc-title">
-                      <?php echo get_the_title(); ?>
-                      <?php
-                      if (mb_strlen($post->post_title) > 30) {
-                        $title = mb_substr($post->post_title, 0, 30);
-                        echo $title . "...";
-                      } else {
-                        echo $post->post_title;
-                      }
-                      ?>
-                    </h3>
-                    <p><?php echo get_the_date('Y-m-d'); ?></p>
-                  </div>
+                </div>
+                <div class="post-flex-container-desc">
+                  <h3 class="post-flex-container-desc-title">
+                    <?php echo get_the_title(); ?>
+                    <?php
+                    if (mb_strlen($post->post_title) > 30) {
+                      $title = mb_substr($post->post_title, 0, 30);
+                      echo $title . "...";
+                    } else {
+                      echo $post->post_title;
+                    }
+                    ?>
+                  </h3>
+                  <p><?php echo get_the_date('Y-m-d'); ?></p>
+                </div>
               </a>
             <?php endwhile; ?>
           <?php else : ?>
