@@ -37,9 +37,9 @@ li{
   }
   &-img{
     &-img{
+      border-radius: 10px;
       width: 100%;
       vertical-align: bottom;
-      border-radius: 10px;
     }
   }
   &-text{
@@ -64,7 +64,12 @@ li{
 
   }
 }
-
 .no-see{
   margin: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .inner{
+    width: 100%;
+  }
 }

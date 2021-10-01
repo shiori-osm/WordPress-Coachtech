@@ -5,7 +5,8 @@
       <div class="article">
         <!-- <div href="" class="article-category">カテゴリーの名前</div> -->
         <?php if (has_category()) : ?>
-          <div class="article-category"><?php echo get_the_category_list(' '); ?>
+          <div class="article-category">
+            <?php echo get_the_category_list(' '); ?>
           <?php endif; ?>
           </div>
 

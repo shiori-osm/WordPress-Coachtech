@@ -39,9 +39,9 @@ li {
   margin-bottom: 30px;
 }
 .article-img-img {
+  border-radius: 10px;
   width: 100%;
   vertical-align: bottom;
-  border-radius: 10px;
 }
 .article-text {
   line-height: 2em;
@@ -66,5 +66,11 @@ li {
 
 .no-see {
   margin: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .inner {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=single.css.map */
