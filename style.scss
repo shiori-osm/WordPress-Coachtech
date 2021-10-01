@@ -10,6 +10,12 @@ a{
 li{
   list-style-type: none;
 }
+img{
+  width: 100%;
+  height: 100%;
+  // border-radius: 20px 20px 0 0;
+  vertical-align: bottom;
+}
 
 
 
@@ -75,6 +81,9 @@ li{
     }
   }
 }
+#post-img{
+  border-radius: 20px;
+}
 .post{
   padding-bottom: 30px;
   width: 70%;
@@ -88,7 +97,7 @@ li{
       width: 28%;
       position: relative;
       &-img{
-        border-radius: 20px 20px 0 0;
+        // border-radius: 20px 20px 0 0;
         &-tag{
           border-radius: 20px 0 0 0;
           position: absolute;
@@ -100,7 +109,7 @@ li{
         &-image{
           width: 100%;
           height: 180px;
-          border-radius: 20px 20px 0 0;
+          // border-radius: 20px 20px 0 0;
           vertical-align:bottom;
           object-fit: cover;
         }
@@ -127,7 +136,10 @@ li{
   }
   &-top{
     &-img{
-      width: 100%;
+  
+      &-image{
+        width: 100%;
+      }
       border-radius: 30px;
       margin-bottom: 30px;
     }

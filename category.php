@@ -28,7 +28,6 @@
 
                 <div class="post-flex-container-img">
                   <?php if (has_post_thumbnail()) : ?>
-                    <img class="post-flex-container-img-image">
                     <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?>
                     <!-- <img class="post-flex-container-img-image" alt="アイキャッチ画像がありません"> -->
                     <!-- <img src="./img/blog__first.jpg" class="post-flex-container-img-image"  alt=""> -->

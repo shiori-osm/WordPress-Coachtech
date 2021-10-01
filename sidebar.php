@@ -15,23 +15,33 @@
     <h3 class="sidebar-title">Category</h3>
     <a href="<?php echo get_category_link(158); ?>" class="sidebar-category-link">
       <p>HTML</p>
-      <img src="img/arrow.svg" alt="">
+      <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>./img/arrow.svg" alt="">
+      </div>
     </a>
     <a href="<?php echo get_category_link(159); ?>" class="sidebar-category-link">
       <p>CSS</p>
-      <img src="img/arrow.svg" alt="">
+      <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>./img/arrow.svg" alt="">
+      </div>
     </a>
     <a href="<?php echo get_category_link(160); ?>" class="sidebar-category-link">
       <p>JavaScript</p>
-      <img src="img/arrow.svg" alt="">
+      <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>./img/arrow.svg" alt="">
+      </div>
     </a>
     <a href="<?php echo get_category_link(162); ?>" class="sidebar-category-link">
       <p>PHP</p>
-      <img src="img/arrow.svg" alt="">
+      <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>./img/arrow.svg" alt="">
+      </div>
     </a>
     <a href="<?php echo get_category_link(161); ?>" class="sidebar-category-link">
       <p>MySQL</p>
-      <img src="img/arrow.svg" alt="">
+      <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>./img/arrow.svg" alt="">
+      </div>
     </a>
   </div>
 </aside>

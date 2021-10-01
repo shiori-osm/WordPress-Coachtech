@@ -1,5 +1,5 @@
 body {
-  font-family: "Meiryo" ,sans-serif;
+  font-family: "Meiryo", sans-serif;
   color: #707070;
   background-color: #F5F5F5;
 }
@@ -16,11 +16,9 @@ li {
 .cat-fv {
   background-color: #B31566;
 }
-
 .cat-fv-main {
-  font-family: "Indie Flower" , "Meiryo";
+  font-family: "Indie Flower", "Meiryo";
 }
-
 .cat-fv-main-desc {
   padding: 100px;
   line-height: 1.5em;
@@ -34,35 +32,35 @@ li {
   width: 90%;
   margin: auto;
 }
-
 .main-inner-title {
   font-weight: bold;
   font-size: 1.5em;
   color: #707070;
 }
-
 .main-inner-title::before {
   color: #B31566;
   font-family: "Indie Flower";
-  content: "\ANew Post\A";
+  content: "\aNew Post\a";
   white-space: pre;
-  font-size: .5em;
+  font-size: 0.5em;
   font-weight: lighter;
 }
-
 .main-inner-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .post {
   width: 70%;
 }
-
 .post-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-
 .post-flex-container {
   margin-top: 30px;
   margin-right: 5%;
@@ -70,12 +68,10 @@ li {
   width: 28%;
   position: relative;
 }
-
 .post-flex-container-img {
   vertical-align: bottom;
   border-radius: 20px 20px 0 0;
 }
-
 .post-flex-container-img-tag {
   border-radius: 20px 0 0 0;
   position: absolute;
@@ -84,26 +80,29 @@ li {
   color: #fff;
   top: 0;
 }
-
 .post-flex-container-img-img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .post-flex-container-img-noimage {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   vertical-align: bottom;
 }
-
 .post-flex-container-desc {
   line-height: 1.5em;
   border-radius: 0 0 20px 20px;
   background-color: #fff;
   padding: 10%;
 }
-
 .post-flex-container-desc-title {
   margin-bottom: 10px;
+}
+
+img {
+  border-radius: 20px 20px 0 0;
+  vertical-align: bottom;
 }
 
 .no-see {
@@ -112,24 +111,34 @@ li {
 
 @media screen and (max-width: 760px) {
   .main-inner-flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+
   .post {
     width: 100%;
   }
   .post-flex {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .post-flex-container {
     width: 100%;
   }
   .post-flex-container-img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .post-flex-container-desc {
     padding: 30px;
   }
+
   .sidebar {
     width: 100%;
   }
 }
+/*# sourceMappingURL=category.css.map */

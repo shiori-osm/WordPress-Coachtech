@@ -22,10 +22,10 @@
                     ?>
                   </p>
                 <?php endif; ?>
-                <div class="post-flex-container-img">
+                <div id="post-img" class="post-flex-container-img">
                   <?php if (has_post_thumbnail()) : ?>
                     <!-- <img class="post-flex-container-img-image"> -->
-                    <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'height' => '180px',  'alt' => the_title_attribute('echo=0'))); ?>
+                    <?php the_post_thumbnail('post-thumbnails', array('width' => '100%', 'alt' => the_title_attribute('echo=0'))); ?>
                   <?php else : ?>
                     <img class="post-flex-container-img-image" src="<?php echo get_template_directory_uri(); ?>/img/no-images.png" alt="no-img">
                   <?php endif ?>
